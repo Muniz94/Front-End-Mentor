@@ -39,7 +39,7 @@ html {
 
 .col-a svg {
   padding-right: 0.5em;
-  padding-top: 1em;
+  padding-top: 0.2em;
   display: inline-block;
 }
 
@@ -55,6 +55,10 @@ html {
   font-size: 0.9em;
 }
 
+.input_email{
+  text-indent: 2em;
+}
+
 .subscribe {
   margin-top: 2em;
   width: 27.5em;
@@ -63,6 +67,7 @@ html {
   background-color: var(--Dark-Slate-Grey);
   color: var(--White);
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .col-b {
