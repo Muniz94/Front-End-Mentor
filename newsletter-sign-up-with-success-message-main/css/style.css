@@ -33,7 +33,13 @@ body p {
   padding-top: 3rem;
 }
 
-.wrapper svg {
+.col-a svg {
+  padding-right: 0.5em;
+  padding-top: 1em;
+  display: inline-block;
+}
+
+.col-b {
   padding: 1.5rem;
 }
 
