@@ -2,17 +2,20 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  background-color: gray;
-  font-weight: 400;
+  background-color: grey;
 }
 
-body p {
-  font-size: 16px;
+:root {
+  --primary-color: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
 }
 
 .form {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 50%;
   transform: translate(0%, 15%); 
   position: relative;
@@ -25,18 +28,41 @@ body p {
 }
 
 .col-a {
-  padding-left: 6.5rem;
+  margin-left: 3rem;
 }
 
 .col-a h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding-top: 3rem;
+  color: var(--Dark-Slate-Grey);
 }
 
 .col-a svg {
   padding-right: 0.5em;
   padding-top: 1em;
   display: inline-block;
+}
+
+.email {
+  padding-top: 2em;
+  font-weight: bolder;
+}
+
+.input_email, .subscribe {
+  width: 27em;
+  height: 3em;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.subscribe {
+  margin-top: 2em;
+  width: 27.5em;
+  height: 3.5em;
+  text-align: center;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  font-weight: bolder;
 }
 
 .col-b {
