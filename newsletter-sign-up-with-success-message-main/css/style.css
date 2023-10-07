@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
-html {
-  font-family: 'Roboto', sans-serif;
-  background-color: grey;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -13,68 +13,82 @@ html {
   --White: hsl(0, 0%, 100%);
 }
 
-.form {
-  background-color: white;
-  border-radius: 20px;
-  width: 50%;
-  transform: translate(0%, 15%); 
-  position: relative;
-  margin: auto;
+body {
+  box-sizing: border-box;
+  background-color: var(--Grey);
+  height: 100vh;
 }
 
-.wrapper{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+.page {
+  width: 52em;
+  height: 33em;
+  margin: 12% 29%;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.section-main {
+  display: flex;
+  padding: 2%;
+  gap: 15px;
 }
 
 .col-a {
-  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 446px;
+  padding-left: 4%;
+  padding-top: 5%;
 }
 
 .col-a h1 {
-  font-size: 4rem;
-  padding-top: 3rem;
+  font-weight: 700;
+  font-size: 58px;
   color: var(--Dark-Slate-Grey);
 }
 
-.col-a svg {
-  padding-right: 0.5em;
-  padding-top: 0.2em;
-  display: inline-block;
+.col-a p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
 }
 
 .email {
-  padding-top: 2em;
-  font-weight: bolder;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--Charcoal-Grey);
+  padding-top: 3%;
 }
 
-.input_email, .subscribe {
-  width: 27em;
-  height: 3em;
-  border-radius: 10px;
-  font-size: 0.9em;
-}
-
-.input_email{
-  text-indent: 2em;
+.input_email {
+  border-radius: 5px;
+  width: 85%;
+  height: 3.3em;
+  text-indent: 8%;
 }
 
 .subscribe {
-  margin-top: 2em;
-  width: 27.5em;
-  height: 3.5em;
-  text-align: center;
+  border-radius: 5px;
+  width: 85%;
+  height: 3.3em;
   background-color: var(--Dark-Slate-Grey);
   color: var(--White);
-  font-weight: bolder;
+}
+
+.subscribe:hover {
   cursor: pointer;
+  background-color: var(--primary-color);
+  transition: 1s;
 }
 
-.col-b {
-  padding: 1.5rem;
-}
-
-.attribution { 
-  font-size: 11px; text-align: center; 
-  color: hsl(228, 45%, 44%); 
-}
