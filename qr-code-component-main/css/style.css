@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  height: 50%;
   display: flex;
   align-self: center;
 }
@@ -25,7 +24,6 @@ body {
   border-radius: 20px;
   background-color: white;
   padding: 1rem 1rem 2rem;
-  height: 100%;
 }
 
 .qr-code img {
