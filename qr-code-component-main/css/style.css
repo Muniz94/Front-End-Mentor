@@ -50,3 +50,9 @@ body {
   font-size: 17px;
   line-height: 110%;
 }
+
+@media (min-height:520px) {
+  html {
+    height: 100%;
+  }
+}
