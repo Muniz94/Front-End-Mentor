@@ -30,12 +30,13 @@
                 <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
                 <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
               And much more!</p>
-              <form action="" class="form" id="form">
-                <p class="email">
-                  Email address
-                </p>
-                  <p><input type="text" class="input_email" id="input_email" placeholder="email@company.com" /></p>
-      
+              <form action="" class="form" id="form" novalidate>
+                <div class="form__div">
+                  <label for="email" class="form__label"> Email address </label>
+                  <input type="email" class="input_email" id="input_email" placeholder="email@company.com" aria-errormessage="emailErrorMessage" required/>
+                  <p id="emailErrorMessage" aria-live="polite" class="error-msg error-msg_hide ">Valid email required</p>
+                </div>
+                    
               <!--email@company.com-->
               <p><input type="submit" value="Subscribe to monthly newsletter" class="subscribe" id="subscribe"/></p>
               </form>
