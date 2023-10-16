@@ -1,62 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css"/>
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Sign-up form start -->
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
 
     <main class="page">
-      <section class="section-main">
-          <div class="col-a" id="col-a">
-            <h1>Stay updated!</h1>
-              <p>Join 60,000+ product managers receiving monthly updates on:</p>
-              <p><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
-              Product discovery and building what matters</p>
-              <p><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
-              Measuring to ensure updates are a success</p>
-              <p><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
-              And much more!</p>
-              <form action="" class="form" id="form" novalidate>
-                <div class="form__div">
-                  <label for="email" class="form__label"> Email address </label>
-                  <input type="email" class="input_email" id="input_email" placeholder="email@company.com" aria-errormessage="emailErrorMessage" required/>
-                  <p id="emailErrorMessage" aria-live="polite" class="error-msg error-msg_hide ">Valid email required</p>
-                </div>
-                    
-              <!--email@company.com-->
-              <p><input type="submit" value="Subscribe to monthly newsletter" class="subscribe" id="subscribe"/></p>
-              </form>
-          </div>
-          <img src="assets/images/illustration-sign-up-desktop.svg" alt="" srcset="">
+      <section class="section-main" id="section-main">
+        <div class="col-a" id="col-a">
+          <h2 class="section__title">Stay updated!</h2>
+          <p class="section__paragraph">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <p class="section__paragraph">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            Product discovery and building what matters
+          </p>
+          <p class="section__paragraph">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            Measuring to ensure updates are a success
+          </p>
+          <p class="section__paragraph">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            And much more!
+          </p>
+          <form action="" class="form" id="form" novalidate>
+            <div class="form__div">
+              <label for="email" class="form__label"> Email address </label>
+              <input
+                type="email"
+                class="form__input__email"
+                id="form__input__email"
+                placeholder="email@company.com"
+                aria-errormessage="emailErrorMessage"
+                required
+              />
+              <p
+                id="emailErrorMessage"
+                aria-live="polite"
+                class="form__error-msg form__error-msg_hide"
+              >
+                Valid email required
+              </p>
+            </div>
+
+            <!--email@company.com-->
+            <p>
+              <input
+                type="submit"
+                value="Subscribe to monthly newsletter"
+                class="subscribe"
+                id="subscribe"
+              />
+            </p>
+          </form>
+        </div>
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt=""
+          srcset=""
+        />
       </section>
-    </main>
 
-  <!-- Sign-up form end -->
+      <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+      <!-- Success message start -->
 
-  <section
+      <section
         aria-live="polite"
-        class="section section_hide section__success-state">
+        class="section_hide section__success"
+        id="section-success"
+      >
         <img
           src="./assets/images/icon-success.svg"
           alt=""
-          class="section__icon" />
-        <h2 class="section__heading">Thanks for subscribing!</h2>
+          class="section__icon"
+        />
+        <h2 class="section__title">Thanks for subscribing!</h2>
         <p class="section__paragraph">
           A confirmation email has been sent to
           <span id="emailValue" class="section__paragraph--highlighted"
@@ -65,9 +142,9 @@
           subscription.
         </p>
         <button id="clearBtn" class="btn section__btn">Dismiss message</button>
-  </section>
-  <!-- Success message end -->
-
-  <script src="js/script.js"></script>
-</body>
+      </section>
+      <!-- Success message end -->
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
