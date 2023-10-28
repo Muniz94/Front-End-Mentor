@@ -15,7 +15,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: var(--Grey);
+  background-color: var(--Dark-Slate-Grey);
   height: 100vh;
 }
 
